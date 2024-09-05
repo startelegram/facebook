@@ -90,13 +90,28 @@
 
         <!-- profile icons right -->
         <div class="profile-icons">
-            <!-- icon meseage -->
-            <span class="meseage-icon">
-                <a href="#">
+            <style>
+                .messenger-link {
+                    color: blue; /* لون النص */
+                    cursor: pointer; /* تغيير شكل المؤشر */
+                    text-decoration: underline; /* إضافة خط تحت النص */
+                }
+            </style>
+        </head>
+        <body>
+        
+            <!-- icon message -->
+            <span class="message-icon">
+                <a href="javascript:void(0);" onclick="openMessenger()">
                     <i class="fa-brands fa-facebook-messenger"></i>
                 </a>
             </span>
-
+        
+            <script>
+                function openMessenger() {
+                    window.open('https://www.messenger.com/?locale=ar_AR', '_blank');
+                }
+            </script>
             <!-- icon notification -->
             <span class="notification-icon">
                 <i class="fa-solid fa-bell"></i>
